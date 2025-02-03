@@ -1,4 +1,5 @@
 
+//bringing in element from html document 
 
 const menuOpen = document.querySelector('.menu-open')
 const menuClose = document.querySelector('.menu-close')
@@ -16,7 +17,7 @@ const fourthHexCode = document.querySelector('#fourth-hex-code')
 
 
 
-
+//array of hexa decima numbers
 const hexaDecimal= [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"]
 
 menuOpen.addEventListener('click', ()=>{
@@ -29,6 +30,8 @@ menuOpen.addEventListener('click', ()=>{
     }
 })
 
+// opening the hamburger menu
+
 menuClose.addEventListener('click', ()=>{
 
     if (menuOpen){
@@ -38,11 +41,14 @@ menuClose.addEventListener('click', ()=>{
     }
 })
 
+//function to generate random number
 
 function generateRandomNumber(){
   let randomNumber =  Math.floor(Math.random() * hexaDecimal.length)
   return randomNumber
 }
+
+//button to generate the random color in the hero section
 
 heroBtn.addEventListener("click", ()=>{
 
@@ -91,6 +97,7 @@ heroBtn.addEventListener("click", ()=>{
 
 })
 
+//reset button in the hero section
 
 resetBtn.addEventListener("click", ()=>{
 
