@@ -255,6 +255,7 @@ header{
         top: 70;
         right: 0;
         left: 0;
+        max-height: 0px;
         text-align: center;
         margin-top: 2.5rem;
         background-color: #045ba3;
